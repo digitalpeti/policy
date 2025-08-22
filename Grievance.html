@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grievance Redressal Policy – {{APP_NAME}}</title>
+  <meta name="description" content="Grievance Redressal Policy for {{APP_NAME}} in compliance with Indian regulations." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-gray-100 font-sans">
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <header class="text-center mb-10">
+      <span class="text-xs uppercase tracking-wider bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full">India • Grievance Redressal</span>
+      <h1 class="mt-4 text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">Grievance Redressal Policy</h1>
+      <p class="mt-2 text-gray-400">For {{APP_NAME}} operated by {{LEGAL_ENTITY_NAME}} ("Company", "we", "us").</p>
+    </header>
+
+    <section class="bg-slate-800/60 rounded-2xl shadow-xl border border-slate-700">
+      <div class="p-8 space-y-6">
+        <h2 class="text-xl font-semibold">1) Purpose & Scope</h2>
+        <p>This Grievance Redressal Policy describes how users of <strong>{{APP_NAME}}</strong> may raise complaints (“grievances”) and how we receive, acknowledge, investigate, and resolve them. It applies to grievances related to our website, mobile apps, products, services, and our handling of personal data.</p>
+
+        <h2 class="text-xl font-semibold">2) Regulatory Context (India)</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Consumer Protection Act, 2019 and relevant rules for e-commerce/service providers.</li>
+          <li>Information Technology Act, 2000 and applicable rules on grievance redressal for intermediaries and digital platforms.</li>
+          <li>Digital Personal Data Protection Act, 2023 (DPDP Act) requirements on data principal rights and grievance mechanisms.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold">3) Grievance Officer</h2>
+        <div class="grid md:grid-cols-2 gap-6 mt-4">
+          <div class="bg-slate-700/40 rounded-xl p-5 border border-slate-600">
+            <h3 class="text-lg font-medium mb-2">Designated Officer</h3>
+            <p><strong>Name:</strong> {{GRIEVANCE_OFFICER_NAME}}</p>
+            <p><strong>Email:</strong> <a href="mailto:{{GRIEVANCE_OFFICER_EMAIL}}" class="text-cyan-400 hover:underline">{{GRIEVANCE_OFFICER_EMAIL}}</a></p>
+            <p><strong>Phone:</strong> <a href="tel:{{GRIEVANCE_OFFICER_PHONE}}" class="text-cyan-400 hover:underline">{{GRIEVANCE_OFFICER_PHONE}}</a></p>
+            <p><strong>Postal Address:</strong> {{POSTAL_ADDRESS}}</p>
+          </div>
+          <div class="bg-slate-700/40 rounded-xl p-5 border border-slate-600">
+            <h3 class="text-lg font-medium mb-2">Alternative Contact (Escalation)</h3>
+            <p><strong>Name:</strong> {{ESCALATION_OFFICER_NAME}}</p>
+            <p><strong>Email:</strong> <a href="mailto:{{ESCALATION_EMAIL}}" class="text-cyan-400 hover:underline">{{ESCALATION_EMAIL}}</a></p>
+            <p><strong>Phone:</strong> <a href="tel:{{ESCALATION_PHONE}}" class="text-cyan-400 hover:underline">{{ESCALATION_PHONE}}</a></p>
+          </div>
+        </div>
+
+        <h2 class="text-xl font-semibold">4) How to Submit a Grievance</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Online: <a href="{{GRIEVANCE_FORM_URL}}" class="text-cyan-400 hover:underline">{{GRIEVANCE_FORM_URL}}</a></li>
+          <li>Email: <a href="mailto:{{GRIEVANCE_OFFICER_EMAIL}}" class="text-cyan-400 hover:underline">{{GRIEVANCE_OFFICER_EMAIL}}</a></li>
+          <li>In-App: Navigate to <em>Account → Help & Support → Grievances</em></li>
+          <li>Post: Write to the Grievance Officer at the postal address above</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold">5) Process & Timelines</h2>
+        <ol class="list-decimal list-inside space-y-2">
+          <li><strong>Acknowledgement:</strong> within {{ACK_TAT_HOURS}} hours.</li>
+          <li><strong>Assessment:</strong> triage and assign case ID.</li>
+          <li><strong>Resolution Target:</strong> within {{RESOLUTION_TAT_DAYS}} days (max {{MAX_TAT_DAYS}} days).</li>
+          <li><strong>Updates:</strong> user informed of progress.</li>
+          <li><strong>Closure:</strong> case closed when resolved or inactive for {{INACTIVITY_CLOSE_DAYS}} days.</li>
+        </ol>
+
+        <h2 class="text-xl font-semibold">6) Escalation Path</h2>
+        <p>If dissatisfied, users may escalate internally, or approach the <strong>Data Protection Board of India</strong> (for privacy/data issues) or Consumer Fora (for service issues).</p>
+
+        <h2 class="text-xl font-semibold">7) Privacy & Records</h2>
+        <p>We process grievance information only for resolution, protect it with appropriate safeguards, and retain it for {{RETENTION_PERIOD}} before anonymization or deletion.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 bg-slate-700/30 rounded-xl border border-slate-600 p-4 mt-6 text-sm text-gray-400">
+          <div><strong>Effective Date:</strong> {{EFFECTIVE_DATE}}</div>
+          <div><strong>Last Reviewed:</strong> {{LAST_REVIEW_DATE}}</div>
+          <div><strong>Owner:</strong> {{POLICY_OWNER_ROLE}}</div>
+          <div><strong>Version:</strong> {{POLICY_VERSION}}</div>
+        </div>
+      </div>
+    </section>
+
+    <p class="text-center text-gray-500 text-sm mt-6">For questions, contact <a href="mailto:{{SUPPORT_EMAIL}}" class="text-cyan-400 hover:underline">{{SUPPORT_EMAIL}}</a>.</p>
+  </div>
+</body>
+</html>
